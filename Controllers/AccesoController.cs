@@ -48,6 +48,7 @@ namespace LoginNET.Controllers
             else
             {
                 ViewData["Mensaje"] = "Las contraseñas no coinciden";
+                return View();
             }
 
             using (SqlConnection cn = new SqlConnection(cadena))
